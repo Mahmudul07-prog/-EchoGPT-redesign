@@ -1,0 +1,16 @@
+{
+  "name": "echogpt-redesign",
+  "private": true,
+  "version": "1.0.0",
+  "description": "EchoGPT redesign monorepo: web app, marketing landing page, and Chrome extension concept",
+  "scripts": {
+    "install:all": "npm install --prefix web-app && npm install --prefix landing-page && npm install --prefix extension",
+    "dev:web": "npm --prefix web-app run dev",
+    "dev:landing": "npm --prefix landing-page run dev",
+    "dev:extension": "npm --prefix extension run dev",
+    "build:web": "npm --prefix web-app run build",
+    "build:landing": "npm --prefix landing-page run build",
+    "build:extension": "npm --prefix extension run build",
+    "build:all": "npm run build:web && npm run build:landing && npm run build:extension"
+  }
+}

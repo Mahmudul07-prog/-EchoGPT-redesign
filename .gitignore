@@ -1,0 +1,12 @@
+node_modules
+dist
+.claude
+dist-zip
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+*.log
+.vite
+.turbo

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EchoGPT — One Workspace, Every AI Model</title>
+    <meta
+      name="description"
+      content="EchoGPT brings multiple AI models into a single workspace and browser sidebar. Chat, compare, summarize pages, explain selected text, create images and video, and automate work — all in one place."
+    />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('echogpt-theme');
+          var isDark =
+            stored === 'dark' ||
+            (stored !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.classList.toggle('dark', isDark);
+          document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+        } catch (e) {
+          /* localStorage unavailable — fall back to light theme */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
