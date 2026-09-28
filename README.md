@@ -1,7 +1,10 @@
 # EchoGPT — Frontend Redesign
 
 A full frontend redesign of **EchoGPT** (a multi-AI chat productivity app), built as three linked
-deliverables in one repo:
+deliverables in one repo.
+
+**Live demos:** [Web App](https://echogpt-web-app.vercel.app/) · [Landing Page](https://echogpt-landing-page-ochre.vercel.app/)
+**Repository:** https://github.com/Mahmudul07-prog/-EchoGPT-redesign
 
 | Folder | What it is | Stack |
 |---|---|---|
